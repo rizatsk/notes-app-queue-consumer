@@ -15,16 +15,16 @@ class MailSender {
 
     sendEmail(targetEmail, content) {
         const message = {
-            from: 'example@email.com',
+            from: 'rzsakmir@gmail.com',
             // from: 'Notes App', // tidak di kenali oleh gmail dan tidak sesuai dengan email yang dikirimkan
             to: targetEmail,
-            subject: 'Export Notes',
-            text: `Terlampir hasil dari ekspor catatann`,
+            subject: 'Pamer',
+            text: `Send Mail Use NodeMailer and Message Broker`,
             attachments: [
                 {
-                    filename: 'notes.json',
+                    filename: 'resume.pdf',
                     content,
-                    // path: 'resume.pdf' for send file
+                    // path: 'resume.pdf' //for send file
                 }
             ],
         };
